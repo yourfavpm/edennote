@@ -1,0 +1,27 @@
+{
+  "name": "@eden-note/api",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@eden-note/shared": "workspace:*",
+    "@fastify/cors": "^8.3.0",
+    "@fastify/jwt": "^7.2.0",
+    "@fastify/rate-limit": "^10.3.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "bullmq": "^4.12.0",
+    "fastify": "^4.24.0",
+    "fastify-plugin": "^5.1.0",
+    "pino": "^8.16.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+}

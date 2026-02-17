@@ -1,0 +1,28 @@
+{
+  "name": "@eden-note/worker",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@eden-note/shared": "workspace:*",
+    "@supabase/supabase-js": "^2.38.0",
+    "assemblyai": "^4.0.0",
+    "axios": "^1.13.5",
+    "bullmq": "^4.12.0",
+    "docx": "^9.5.3",
+    "ioredis": "^5.3.2",
+    "jspdf": "^4.1.0",
+    "openai": "^6.22.0",
+    "pino": "^8.16.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+}

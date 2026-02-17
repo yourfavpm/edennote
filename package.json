@@ -1,0 +1,16 @@
+{
+  "name": "eden-note-ai",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter \"*\" --parallel dev",
+    "build": "pnpm --filter \"*\" build",
+    "lint": "pnpm --filter \"*\" lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.1"
+  }
+}

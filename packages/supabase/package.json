@@ -1,0 +1,8 @@
+{
+  "name": "@eden-note/supabase",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "gen:types": "supabase gen types typescript --project-id your-project-id > src/types.ts"
+  }
+}
