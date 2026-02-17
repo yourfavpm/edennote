@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm --filter \"*\" --parallel dev",
-    "build": "pnpm --filter \"*\" build",
+    "build": "pnpm --filter @eden-note/shared build && pnpm --filter @eden-note/api build && pnpm --filter @eden-note/worker build && pnpm --filter @eden-note/web build",
     "lint": "pnpm --filter \"*\" lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
   },
