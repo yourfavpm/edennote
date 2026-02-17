@@ -79,6 +79,17 @@ To verify the core AI functionality, follow these steps:
     - Select **PDF** or **DOCX**.
     - Verify the export appears in the **"Recent Exports"** list and is downloadable.
 
+## 🏗️ Architecture Notes
+
+### Supabase Utilities
+
+The project uses a split pattern for Supabase to comply with Next.js Server Components:
+
+- `src/utils/supabase-client.ts`: For Client Components (uses `createBrowserSupabaseClient`).
+- `src/utils/supabase-server.ts`: For Server Components/Actions (uses `createServerComponentClient`).
+
+Using the wrong utility in the wrong component will cause build errors (`useState` in Server or `next/headers` in Client).
+
 ---
 
 > [!TIP]

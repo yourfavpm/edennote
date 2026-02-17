@@ -1,4 +1,4 @@
-import { createServerClient } from '@/utils/supabase'
+import { createServerClient } from '@/utils/supabase-server'
 import { redirect } from 'next/navigation'
 
 export default async function AppRootPage() {

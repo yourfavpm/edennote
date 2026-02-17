@@ -1,5 +1,7 @@
+'use client'
+
 import { useState, useEffect } from 'react'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 import UploadModal from '@/components/meetings/UploadModal'
 import RecordModal from '@/components/meetings/RecordModal'
 import MeetingList from '@/components/meetings/MeetingList'

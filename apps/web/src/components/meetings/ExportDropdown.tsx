@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 import { Download, Loader2, FileText, ChevronDown } from 'lucide-react'
 
 interface ExportDropdownProps {

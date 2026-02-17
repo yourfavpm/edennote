@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { X, Mic, Square, Loader2, AlertCircle, CheckCircle2 } from 'lucide-react'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 
 interface RecordModalProps {
   workspaceId: string

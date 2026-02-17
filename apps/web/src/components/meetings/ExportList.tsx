@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 import { Download, Loader2, FileText, CheckCircle2, Clock } from 'lucide-react'
 
 interface ExportListProps {

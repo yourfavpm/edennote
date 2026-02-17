@@ -1,4 +1,4 @@
-import { createServerClient } from '@/utils/supabase'
+import { createServerClient } from '@/utils/supabase-server'
 
 export default async function WorkspaceSwitcher({ currentWorkspaceId }: { currentWorkspaceId: string }) {
   const supabase = createServerClient()

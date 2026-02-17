@@ -1,11 +1,12 @@
 {
   "name": "@eden-note/shared",
   "version": "1.0.0",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
   "scripts": {
+    "build": "echo 'No build needed for shared'",
     "lint": "eslint src/**/*.ts"
   },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
   "dependencies": {
     "zod": "^3.22.0"
   }

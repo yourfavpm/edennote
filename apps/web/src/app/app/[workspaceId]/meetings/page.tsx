@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 import { FileText, Clock, CheckCircle2, AlertCircle, Loader2, ChevronRight, Mic, Upload } from 'lucide-react'
 
 interface Meeting {

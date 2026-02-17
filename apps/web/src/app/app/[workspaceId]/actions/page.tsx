@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 import { CheckCircle2, Circle, Clock, AlertCircle, Loader2, ExternalLink, User } from 'lucide-react'
 
 interface ActionItem {

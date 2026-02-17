@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState, useMemo } from 'react'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 import StatusStepper from '@/components/meetings/StatusStepper'
 import { 
   Loader2, FileText, ListChecks, MessageSquare, 

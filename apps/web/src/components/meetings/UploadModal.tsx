@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { X, Upload, FileAudio, CheckCircle2, AlertCircle } from 'lucide-react'
-import { createClient } from '@/utils/supabase'
+import { createClient } from '@/utils/supabase-client'
 
 interface UploadModalProps {
   workspaceId: string
