@@ -4,14 +4,11 @@
     "target": "ESNext",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
     "outDir": "dist",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@eden-note/shared": ["../../packages/shared/src/index.ts"]
-    }
+    "skipLibCheck": true
   },
   "include": ["src/**/*"]
 }
