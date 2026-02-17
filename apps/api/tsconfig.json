@@ -1,14 +1,14 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "target": "ESNext",
     "module": "commonjs",
     "moduleResolution": "node",
-    "lib": ["ESNext", "DOM"],
     "baseUrl": ".",
     "rootDir": "src",
     "outDir": "dist",
-    "typeRoots": ["./node_modules/@types", "../../node_modules/@types"]
+    "paths": {
+      "@eden-note/shared": ["../../packages/shared/dist"]
+    }
   },
   "include": ["src/**/*"]
 }

@@ -1,15 +1,19 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "lib": ["ESNext", "DOM"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "@eden-note/shared": ["./packages/shared/src/index.ts"],
+      "@/*": ["./apps/web/src/*"]
+    }
   },
   "exclude": ["node_modules"]
 }
