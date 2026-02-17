@@ -47,6 +47,9 @@ importers:
       '@supabase/supabase-js':
         specifier: ^2.38.0
         version: 2.95.3
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.19.33
       bullmq:
         specifier: ^4.12.0
         version: 4.18.3
@@ -63,9 +66,6 @@ importers:
         specifier: ^3.22.0
         version: 3.25.76
     devDependencies:
-      '@types/node':
-        specifier: ^20.0.0
-        version: 20.19.33
       ts-node-dev:
         specifier: ^2.0.0
         version: 2.0.0(@types/node@20.19.33)(typescript@5.9.3)
@@ -179,6 +179,10 @@ importers:
       zod:
         specifier: ^3.22.0
         version: 3.25.76
+    devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.19.33
 
   packages/supabase: {}
 

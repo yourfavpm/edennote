@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "tsc",
-    "lint": "eslint src/**/*.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/worker.ts",
+    "build": "../../node_modules/.bin/tsc",
+    "lint": "../../node_modules/.bin/eslint src/**/*.ts"
   },
   "dependencies": {
     "@eden-note/shared": "workspace:*",

@@ -2,8 +2,8 @@
   "name": "@eden-note/shared",
   "version": "1.0.0",
   "scripts": {
-    "build": "tsc",
-    "lint": "eslint src/**/*.ts"
+    "build": "../../node_modules/.bin/tsc",
+    "lint": "../../node_modules/.bin/eslint src/**/*.ts"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

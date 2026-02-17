@@ -4,10 +4,10 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "prebuild": "ls -la node_modules && ls -la ../../node_modules",
-    "build": "tsc",
-    "lint": "eslint src/**/*.ts",
-    "type-check": "tsc --noEmit"
+    "prebuild": "ls -la ../../node_modules",
+    "build": "../../node_modules/.bin/tsc",
+    "lint": "../../node_modules/.bin/eslint src/**/*.ts",
+    "type-check": "../../node_modules/.bin/tsc --noEmit"
   },
   "dependencies": {
     "@types/node": "^20.0.0",
