@@ -4,11 +4,13 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "prebuild": "ls -la node_modules && ls -la ../../node_modules",
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/node": "^20.0.0",
     "@eden-note/shared": "workspace:*",
     "@fastify/cors": "^8.3.0",
     "@fastify/jwt": "^7.2.0",
@@ -21,7 +23,6 @@
     "zod": "^3.22.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.0.0"
   }
